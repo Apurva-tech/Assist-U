@@ -19,9 +19,15 @@ export const Headerstyle = styled.div`
     color: black;
     background-color: rgba(68, 221, 54, 0.5);
   }
-  }
   .zet div a {
     text-decoration: none;
     color: darkgreen;
     transition: 0.3s ease-in-out;
+  }
+`;
+
+export const Gamestyle = styled.div`
+  .game-button {
+    background-color: red;
+  }
 `;

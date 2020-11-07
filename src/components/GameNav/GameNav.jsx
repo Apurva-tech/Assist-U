@@ -1,16 +1,16 @@
 import { Button, Box, Grid } from "@material-ui/core";
 
-import { Gamestyle } from "./style";
+import { GameNavWrapper } from "./style";
 
 export const GameNav = ({ changeGameHandler }) => {
   return (
-    <Gamestyle>
+    <GameNavWrapper>
       <Grid container direction='row' justify='center' alignItems='center'>
         <Box margin='1em 2em' padding='0.3em'>
           <Button
             variant='contained'
             className='game-button'
-            size='large'
+            disableElevation
             onClick={() => {
               changeGameHandler(1);
             }}>
@@ -20,8 +20,8 @@ export const GameNav = ({ changeGameHandler }) => {
         <Box margin='1em 2em' padding='0.3em'>
           <Button
             variant='contained'
-            color='primary'
-            size='large'
+            className='game-button'
+            disableElevation
             onClick={() => {
               changeGameHandler(2);
             }}>
@@ -31,8 +31,8 @@ export const GameNav = ({ changeGameHandler }) => {
         <Box margin='1em 2em' padding='0.3em'>
           <Button
             variant='contained'
-            color='primary'
-            size='large'
+            className='game-button'
+            disableElevation
             onClick={() => {
               changeGameHandler(3);
             }}>
@@ -40,6 +40,6 @@ export const GameNav = ({ changeGameHandler }) => {
           </Button>
         </Box>
       </Grid>
-    </Gamestyle>
+    </GameNavWrapper>
   );
 };

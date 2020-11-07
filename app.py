@@ -38,7 +38,9 @@ def Predict_emotion(file_path):
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    img_path = './static/img/happy.jpeg'
+    result = Predict_emotion(img_path)
+    return render_template('index.html', result=result)
 
 
 if __name__ == '__main__':

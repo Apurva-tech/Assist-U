@@ -1,3 +1,8 @@
+```
+The code for backend and frontend are on separate banches:
+- Backend
+- Frontend
+```
 # Assist-U
 # What is Autism? 👩🏽‍⚕️
 Autism is a complicated condition that includes problems with 
@@ -20,9 +25,11 @@ the ability to appreciate and make use of nuance and tone of voice when communic
 
 ## ✔ Improving Cognitive Skills
 - Processing delays have little do to with the capacity to incorporate and evaluate observations and ideas. 
-Delays in the ability to process verbal or written language have a neurological basis. For those individuals who suffer delays, facts, ideas, and questions are often 
-delayed or even lost in translation from language to thought and vice-versa. <strong> Therefore our application has a interactive interface which makes 
+Delays in the ability to process verbal or written language have a neurological basis. For those individuals who suffer delays, facts, ideas, and questions are often delayed or even lost in translation from language to thought and vice-versa. <strong> Therefore our application has a interactive interface which makes 
 learning process for the children. </strong>
+
+## ✔ Learning by visual aid
+- Learning skills such as communication and maths from trained professionals with the help of currated videos a may help bring about consistent positive changes in the overall development and assist in day to day activities.
 
 # Tech Stack
 - [x] Python

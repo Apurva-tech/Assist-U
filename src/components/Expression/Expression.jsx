@@ -4,6 +4,7 @@ import { ExpressionWrapper } from "./style";
 export const Expression = () => {
   const [selectedFile, setSelectedFile] = useState();
   const [preview, setPreview] = useState();
+  const [result, setResult] = useState(null);
 
   // create a preview as a side effect, whenever selected file is changed
   useEffect(() => {
@@ -44,8 +45,9 @@ export const Expression = () => {
         },
       })
       .then((response) => {
-        alert(response);
+        // alert(response);
         console.log(response);
+        setResult(response.data);
       })
       .catch((error) => {
         alert(error);
@@ -55,21 +57,21 @@ export const Expression = () => {
   return (
     <div>
       <ExpressionWrapper>
-        <div className="flex-box">
+        <div className='flex-box'>
           <div>
             {!selectedFile && (
               <>
-                <div class="inputfile-box">
+                <div class='inputfile-box'>
                   <input
-                    type="file"
-                    id="file"
-                    class="inputfile"
+                    type='file'
+                    id='file'
+                    class='inputfile'
                     onChange={onSelectFile}
-                    accept="image/*"
-                    capture="camera"
+                    accept='image/*'
+                    capture='camera'
                   />
-                  <label for="file">
-                    <span id="file-name" class="file-box upload-button">
+                  <label for='file'>
+                    <span id='file-name' class='file-box upload-button'>
                       Capture
                     </span>
                   </label>
@@ -84,13 +86,15 @@ export const Expression = () => {
               </>
             )}
           </div>
-          <div className="flex-box-preview">
-            {selectedFile && <img src={preview} className="preview-img" />}
+          <div className='flex-box-preview'>
+            {selectedFile && <p>Result: {result}</p>}
+            {selectedFile && (
+              <img src={preview} className='preview-img' alt='preview' />
+            )}
           </div>
           <button
-            className="upload-button added-margin"
-            onClick={uploadHandler}
-          >
+            className='upload-button added-margin'
+            onClick={uploadHandler}>
             Upload
           </button>
         </div>

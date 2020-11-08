@@ -6,6 +6,7 @@ import { GameNav } from "./../../components/GameNav/GameNav";
 import { Expression } from "./../../components/Expression/Expression";
 import { Time } from "./../../components/Time/Time";
 import { Money } from "./../../components/Money/Money";
+import { Videos } from "./../../components/Videos/Videos";
 
 export const Home = () => {
   const [game, changeGame] = useState(0);
@@ -22,25 +23,28 @@ export const Home = () => {
         return <Time />;
       case 3:
         return <Money />;
+      case 4:
+        return <Videos />;
+      default:
+        return null;
     }
   };
 
   return (
     <div>
       <HomeWrapper>
+        <h1 className='heading'>Assit-U</h1>
         {game === 0 ? (
           <GameNav changeGameHandler={changeGameHandler} />
         ) : (
           <button
-            className="back-button"
+            className='back-button'
             onClick={() => {
               changeGameHandler(0);
-            }}
-          >
-            <span className="fa fa-arrow-left nav-icon"></span> BACK
+            }}>
+            <span className='fa fa-arrow-left nav-icon'></span> BACK
           </button>
         )}
-
         {gameRender()}
       </HomeWrapper>
     </div>

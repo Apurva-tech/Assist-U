@@ -7,20 +7,20 @@ import { HeaderWrapper } from "./style";
 export const Header = () => {
   return (
     <HeaderWrapper>
-      <div className="zet">
-        <div className="logo">
+      <div className='zet'>
+        <div className='logo'>
           {/* <span class="fas fa-paw" style={{ fontSize: "2em" }}></span>
            */}
-          <img src={logo} height="50em" />
+          <img src={logo} height='50em' alt='Logo' />
         </div>
         <div>
-          <Link to="/">
-            <span className="fa fa-home nav-icon"></span>
+          <Link to='/'>
+            <span className='fa fa-home nav-icon'></span>
           </Link>
         </div>
         <div>
-          <Link to="/about">
-            <span className="fa fa-info nav-icon"></span>
+          <Link to='/about'>
+            <span className='fa fa-info nav-icon'></span>
           </Link>
         </div>
       </div>

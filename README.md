@@ -1,8 +1,11 @@
-```
+<code>
 The code for backend and frontend are on separate banches:
-- Backend
-- Frontend
-```
+ <ul>
+ <li><a href='https://github.com/Apurva-tech/Assist-U/tree/backend'> Backend </a></li>
+ <li><a href='https://github.com/Apurva-tech/Assist-U/tree/frontend'> Frontend </a></li>
+</ul>
+</code><a href='https://github.com/Apurva-tech/Assist-U/tree/frontend'> Frontend </a>
+
 # Assist-U
 # What is Autism? 👩🏽‍⚕️
 Autism is a complicated condition that includes problems with 
@@ -14,6 +17,7 @@ through gestures, facial expressions, and touch.
 
 # How does our application help those children ? 💻
 We built a web application to help children with Autism learn Mathematics, Communication skills and help them understand emotions using a facial expression recognition system using a deep learning module with a train accuracy of 95%.
+## <a href='https://youtu.be/eB-fi18U4fc'> Demo Video </a>
 
 # What problem does our application solve ? 🎯
 ## ✔ Analyzing Emotions
@@ -25,8 +29,11 @@ the ability to appreciate and make use of nuance and tone of voice when communic
 
 ## ✔ Improving Cognitive Skills
 - Processing delays have little do to with the capacity to incorporate and evaluate observations and ideas. 
-Delays in the ability to process verbal or written language have a neurological basis. For those individuals who suffer delays, facts, ideas, and questions are often delayed or even lost in translation from language to thought and vice-versa. <strong> Therefore our application has a interactive interface which makes 
-learning process for the children. </strong>
+Delays in the ability to process verbal or written language have a neurological basis. For those individuals who suffer delays, facts, ideas, and questions are often delayed or even lost in translation from language to thought and vice-versa.
+- We have included a couple of games to enhance the experience of chilren using the app, both of them primmarily focus on basic Mathematics and fundamental  skills:
+- Clock reading skills: This app helps children learn how to read clocks in a fun MCQ styled way.
+- Money management skills:  
+-<strong> Therefore our application has a interactive interface which makes learning process for the children. </strong>
 
 <p  align="center"><img height= "320px"  src = "https://github.com/Apurva-tech/Assist-U/blob/main/assets/money.gif">&emsp; &emsp; &emsp; &emsp;<img height= "320px" src = "https://github.com/Apurva-tech/Assist-U/blob/main/assets/time.gif"></p>
 

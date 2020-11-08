@@ -55,16 +55,45 @@ export const Expression = () => {
   return (
     <div>
       <ExpressionWrapper>
-        {!selectedFile && (
-          <input
-            type="file"
-            onChange={onSelectFile}
-            accept="image/*"
-            capture="camera"
-          />
-        )}
-        {selectedFile && <img src={preview} className="preview-img" />}
-        <button onClick={uploadHandler}>Upload</button>
+        <div className="flex-box">
+          <div>
+            {!selectedFile && (
+              <>
+                <div class="inputfile-box">
+                  <input
+                    type="file"
+                    id="file"
+                    class="inputfile"
+                    onChange={onSelectFile}
+                    accept="image/*"
+                    capture="camera"
+                  />
+                  <label for="file">
+                    <span id="file-name" class="file-box upload-button">
+                      Capture
+                    </span>
+                  </label>
+                </div>
+                {/* <input
+                  type="file"
+                  onChange={onSelectFile}
+                  accept="image/*"
+                  capture="camera"
+                  className="custom-file-input"
+                /> */}
+              </>
+            )}
+          </div>
+          <div className="flex-box-preview">
+            {selectedFile && <img src={preview} className="preview-img" />}
+          </div>
+          <button
+            className="upload-button added-margin"
+            onClick={uploadHandler}
+          >
+            Upload
+          </button>
+        </div>
       </ExpressionWrapper>
     </div>
   );

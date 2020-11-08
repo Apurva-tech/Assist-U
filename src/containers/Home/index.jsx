@@ -5,6 +5,7 @@ import { HomeWrapper } from "./style";
 import { GameNav } from "./../../components/GameNav/GameNav";
 import { Expression } from "./../../components/Expression/Expression";
 import { Time } from "./../../components/Time/Time";
+import { Money } from "./../../components/Money/Money";
 
 export const Home = () => {
   const [game, changeGame] = useState(0);
@@ -14,17 +15,33 @@ export const Home = () => {
   };
 
   const gameRender = () => {
-    return game;
+    switch (game) {
+      case 1:
+        return <Expression />;
+      case 2:
+        return <Time />;
+      case 3:
+        return <Money />;
+    }
   };
 
   return (
     <div>
       <HomeWrapper>
-        <GameNav changeGameHandler={changeGameHandler} />
-        {gameRender()}
+        {game === 0 ? (
+          <GameNav changeGameHandler={changeGameHandler} />
+        ) : (
+          <button
+            className="back-button"
+            onClick={() => {
+              changeGameHandler(0);
+            }}
+          >
+            <span className="fa fa-arrow-left nav-icon"></span> BACK
+          </button>
+        )}
 
-        {/* <Expression /> */}
-        {/* <Time /> */}
+        {gameRender()}
       </HomeWrapper>
     </div>
   );

@@ -19,6 +19,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Life Skills</title>
   </head>
@@ -28,8 +32,27 @@
       /* font-family: monospace; */
     }
   </style>
-  <body>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    particlesJS.load("particles-js", "particlesjs-config.json", function () {
+      console.log("callback - particles.js config loaded");
+    });
+  </script>
+
+  <body style="background-color: #b8bbff">
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div
+      id="particles-js"
+      style="
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+      "
+    ></div>
     <div id="root"></div>
     <!--
       This HTML file is a template.

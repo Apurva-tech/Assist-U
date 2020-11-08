@@ -18,9 +18,11 @@ export const MoneyWrapper = styled.div`
   }
   .notes {
     box-sizing: border-box;
-    padding: 1em 2em;
-    margin: 0.2em 0 0.2em 1.5em;
+    /* padding: 1em 2em; */
+    margin: 1.2em 2em 1.2em 3.5em;
     transition: 0.3s ease-in;
+    border: 3px solid #888;
+    border-radius: 5px;
   }
   .notes:hover {
   }
@@ -30,7 +32,7 @@ export const MoneyWrapper = styled.div`
   }
   .notes img:hover {
     filter: blur(50);
-    box-shadow: -6px 10px 5px 4px #777;
+    box-shadow: -4px 8px 3px 2px #777;
   }
   .total {
     font-size: 1.75em;

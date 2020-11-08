@@ -19,7 +19,7 @@ export const Time = () => {
   const tp = [1, 1, 1, 1];
   const times = tp.map((a, index) => {
     return new Date(
-      Math.floor(Math.random() * 43200000 + (86400000 - 19800000))
+      Math.floor(Math.random() * 43200000 + (86400000 + 3600000 - 19800000))
     );
   });
   const correctAns = Math.floor(Math.random() * 4);
@@ -35,24 +35,28 @@ export const Time = () => {
   return (
     <div>
       <TimeWrapper>
-        <Clock
-          renderNumbers={true}
-          secondHandWidth={0}
-          value={times[correctAns]}
-        />
-
-        <div className="option-container">
-          {times.map((time, index) => {
-            return (
-              <Option
-                hours={time.getHours()}
-                mins={time.getMinutes()}
-                index={index}
-                key={index}
-                submitHandler={submitHandler}
-              />
-            );
-          })}
+        <div class="time">
+          <span style={{ fontSize: "1.45em" }}>Clock</span>
+          <div className="clock">
+            <Clock
+              renderNumbers={true}
+              secondHandWidth={0}
+              value={times[correctAns]}
+            />
+          </div>
+          <div className="option-container">
+            {times.map((time, index) => {
+              return (
+                <Option
+                  hours={time.getHours()}
+                  mins={time.getMinutes()}
+                  index={index}
+                  key={index}
+                  submitHandler={submitHandler}
+                />
+              );
+            })}
+          </div>
         </div>
       </TimeWrapper>
     </div>

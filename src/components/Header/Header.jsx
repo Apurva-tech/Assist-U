@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "./../../whitelogo.png";
 
 import { HeaderWrapper } from "./style";
 
@@ -7,10 +8,10 @@ export const Header = () => {
   return (
     <HeaderWrapper>
       <div className="zet">
-        <div>
-          <Link to="/videos">
-            <span className="fa fa-play nav-icon"></span>
-          </Link>
+        <div className="logo">
+          {/* <span class="fas fa-paw" style={{ fontSize: "2em" }}></span>
+           */}
+          <img src={logo} height="50em" />
         </div>
         <div>
           <Link to="/">

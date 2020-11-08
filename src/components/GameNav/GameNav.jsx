@@ -14,7 +14,7 @@ export const GameNav = ({ changeGameHandler }) => {
             changeGameHandler(1);
           }}
         >
-          game1
+          Understand Expression
         </Button>
 
         <Button
@@ -25,7 +25,7 @@ export const GameNav = ({ changeGameHandler }) => {
             changeGameHandler(2);
           }}
         >
-          game2
+          Learn Time Management
         </Button>
 
         <Button
@@ -36,7 +36,7 @@ export const GameNav = ({ changeGameHandler }) => {
             changeGameHandler(3);
           }}
         >
-          game3
+          Learn Money Management
         </Button>
       </div>
     </GameNavWrapper>

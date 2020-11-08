@@ -43,7 +43,7 @@ export const GameNav = ({ changeGameHandler }) => {
           onClick={() => {
             changeGameHandler(4);
           }}>
-          Watch Educational Videos
+          Educational Videos
         </Button>
       </div>
     </GameNavWrapper>

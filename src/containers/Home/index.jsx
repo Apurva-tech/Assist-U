@@ -33,7 +33,7 @@ export const Home = () => {
   return (
     <div>
       <HomeWrapper>
-        <h1 className='heading'>Assit-U</h1>
+        <h1 className='heading'>Assist-U</h1>
         {game === 0 ? (
           <GameNav changeGameHandler={changeGameHandler} />
         ) : (

@@ -7,7 +7,7 @@ export const GameNavWrapper = styled.div`
     padding: 0.5em 3em;
     font-size: 1.2em;
     border-radius: 9999px;
-    font-family: monaco, "Bubblegum Sans", cursive;
+    font-family: Helvetica, Arial, sans-serif, "Bubblegum Sans", cursive;
     background-color: #000a40;
     line-height: 1.4em;
   }

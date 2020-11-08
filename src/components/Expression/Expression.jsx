@@ -87,7 +87,7 @@ export const Expression = () => {
             )}
           </div>
           <div className='flex-box-preview'>
-            {selectedFile && <p>Result: {result}</p>}
+            {selectedFile && <h2>Result: {result}</h2>}
             {selectedFile && (
               <img src={preview} className='preview-img' alt='preview' />
             )}

@@ -11,18 +11,18 @@ through gestures, facial expressions, and touch.
 We built a web application to help children with Autism learn Mathematics, Communication skills and help them understand emotions using a facial expression recognition system using a deep learning module with a train accuracy of 95%.
 
 # What problem does our application solve ? 🎯
-✔ Analyzing Emotions
+## ✔ Analyzing Emotions
 - For those children who possess the intellectual capacity to function in the general class, speech and language skills can still present a number of obstacles.
 They may have problems expressing their own emotions and feelings as well perceiving and knowing how to respond to those of others. 
 This can be as extreme as lacking the ability to recognize faces and differentiate between different people, or as subtle as lacking 
-the ability to appreciate and make use of nuance and tone of voice when communicating. The application help understand emotion of the patient using a facial expression recognition system , which is a deep learning module built using Tensorflow keras. 
+the ability to appreciate and make use of nuance and tone of voice when communicating. <strong> The application help understand emotion of the patient using a facial expression recognition system , which is a deep learning module built using Tensorflow keras. </strong>
 
 
-✔ Improving Cognitive Skills
+## ✔ Improving Cognitive Skills
 - Processing delays have little do to with the capacity to incorporate and evaluate observations and ideas. 
 Delays in the ability to process verbal or written language have a neurological basis. For those individuals who suffer delays, facts, ideas, and questions are often 
-delayed or even lost in translation from language to thought and vice-versa. Therefore our application has a interactive interface which makes 
-learning process for the children.
+delayed or even lost in translation from language to thought and vice-versa. <strong> Therefore our application has a interactive interface which makes 
+learning process for the children. </strong>
 
 # Tech Stack
 - [x] Python

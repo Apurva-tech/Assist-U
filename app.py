@@ -1,13 +1,19 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+import string 
+import random 
+from flask_cors import CORS, cross_origin
 
 DEVELOPMENT_ENV  = True
 
 app = Flask(__name__)
+cors = CORS(app)
 
 ################################## *** PREDICT MODEL FUNCTION *** ##################################
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 import tensorflow as tf
 from keras.preprocessing import image
 from skimage import io
@@ -36,11 +42,20 @@ def Predict_emotion(file_path):
     return objects[ind]
 
 
-@app.route('/')
+@app.route('/fileupload', methods=['POST', 'GET'])
+@cross_origin()
 def index():
-    img_path = './static/img/happy.jpeg'
-    result = Predict_emotion(img_path)
-    return render_template('index.html', result=result)
+    if request.method == 'POST':
+        if 'file' not in request.files:
+            return 'no file'
+        else:
+            file = request.files['file']
+            img_path = './static/img/'+str(''.join(random.choices(string.ascii_uppercase + string.digits, k = 7)))+'.png'
+
+            file.save(img_path)
+            result = Predict_emotion(img_path)
+            return result
+
 
 
 if __name__ == '__main__':

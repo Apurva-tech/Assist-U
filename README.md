@@ -25,5 +25,14 @@ delayed or even lost in translation from language to thought and vice-versa. The
 learning process for the children.
 
 # Tech Stack
+- [x] Python
+ - Tensorflow
+ - Keras
+ - Scikit-image
+ - Flask
+ - Numpy
+- [x] React
+- [x] Html/CSS
+
 
 <p  align="center"><img height= "600" width = "800" src = "https://github.com/Apurva-tech/Assist-U/blob/main/tech-stack.png"></p>

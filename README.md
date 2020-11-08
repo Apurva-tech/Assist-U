@@ -4,7 +4,6 @@ The code for backend and frontend are on separate banches:
  <li><a href='https://github.com/Apurva-tech/Assist-U/tree/backend'> Backend </a></li>
  <li><a href='https://github.com/Apurva-tech/Assist-U/tree/frontend'> Frontend </a></li>
 </ul>
-</code><a href='https://github.com/Apurva-tech/Assist-U/tree/frontend'> Frontend </a>
 
 # Assist-U
 # What is Autism? 👩🏽‍⚕️

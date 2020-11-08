@@ -1,5 +1,5 @@
 # Assist-U
-# What is Autism?  
+# What is Autism? 👩🏽‍⚕️
 Autism is a complicated condition that includes problems with 
 communication and behaviour. It can involve a wide range of symptoms and skills. ASD can be a minor problem or a disability that needs full-time care in a special facility.
 People with autism have trouble with communication. 
@@ -7,10 +7,10 @@ They have trouble understanding what other people think and feel.
 This makes it hard for them to express themselves, either with words or 
 through gestures, facial expressions, and touch.
 
-# How does our application help those children ?
+# How does our application help those children ? 💻
 We built a web application to help children with Autism learn Mathematics, Communication skills and help them understand emotions using a facial expression recognition system using a deep learning module with a train accuracy of 95%.
 
-# What problem does our application solve ? 
+# What problem does our application solve ? 🎯
 ✔ Analyzing Emotions
 - For those children who possess the intellectual capacity to function in the general class, speech and language skills can still present a number of obstacles.
 They may have problems expressing their own emotions and feelings as well perceiving and knowing how to respond to those of others. 
@@ -26,11 +26,11 @@ learning process for the children.
 
 # Tech Stack
 - [x] Python
- - Tensorflow
- - Keras
- - Scikit-image
- - Flask
- - Numpy
+ - ✔ Tensorflow
+ - ✔ Keras
+ - ✔ Scikit-image
+ - ✔ Flask
+ - ✔ Numpy
 - [x] React
 - [x] Html/CSS
 

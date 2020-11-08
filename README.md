@@ -26,4 +26,4 @@ learning process for the children.
 
 # Tech Stack
 
-<p  align="center"><img height= "800" width = "800" src = "https://github.com/Apurva-tech/Assist-U/blob/main/tech-stack.png"></p>
+<p  align="center"><img height= "600" width = "800" src = "https://github.com/Apurva-tech/Assist-U/blob/main/tech-stack.png"></p>

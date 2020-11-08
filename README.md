@@ -28,8 +28,15 @@ the ability to appreciate and make use of nuance and tone of voice when communic
 Delays in the ability to process verbal or written language have a neurological basis. For those individuals who suffer delays, facts, ideas, and questions are often delayed or even lost in translation from language to thought and vice-versa. <strong> Therefore our application has a interactive interface which makes 
 learning process for the children. </strong>
 
+<p  align="center"><img height= "400" width = "800" src = "https://github.com/Apurva-tech/Assist-U/blob/main/assets/money.gif"></p>
+
+
+<p  align="center"><img height= "400" width = "800" src = "https://github.com/Apurva-tech/Assist-U/blob/main/assets/time.gif"></p>
+
 ## ✔ Learning by visual aid
 - Learning skills such as communication and maths from trained professionals with the help of currated videos a may help bring about consistent positive changes in the overall development and assist in day to day activities.
+
+<p  align="center"><img height= "400" width = "800" src = "https://github.com/Apurva-tech/Assist-U/blob/main/assets/videos.gif"></p>
 
 # Tech Stack
 - [x] Python
